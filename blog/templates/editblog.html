@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Blog</title>
+</head>
+<body>
+<form method="POST" action="/post/{{post.pk}}/edit/">
+			{% csrf_token %}
+			Title:<br><input type="text" name="title" value="{{post.title}}" maxlength="100" required><br>
+			Body:<br> <textarea name="body" cols="50" rows="30">{{post.body}}</textarea><br>
+			<input type="submit">
+
+</body>
+</html>

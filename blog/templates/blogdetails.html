@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{post.title}}</title>
+	</head>
+	<body>
+		<div class="container" style="margin-left: 300px; width: 500px; justify-content: center;">
+			<a href="/">Home</a><br/>
+			<a href="/post/{{post.pk}}/edit">Edit Blog</a>
+			<a href='/delete/{{post.pk}}/' style="float: right"> Delete</a> <br/> 
+			<h1>{{post.title}}</h1>
+			<br/>
+			<br/>
+			<p>{{post.body}}</p>
+		</div>
+	</body>
+</html>

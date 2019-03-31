@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create Post</title>
+	</head>
+	<body>
+		<form method="POST" action="/create/">
+			{% csrf_token %}
+			Title:<br><input type="text" name="title" placeholder="Enter title of the blog" maxlength="100" 	required><br>
+			Body:<br> <textarea name="body" placeholder="Enter body of the blog" cols="50" rows="30"></textarea><br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
